@@ -1,0 +1,205 @@
+/* estilos nulo */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(95, 252, 199, 0.836);
+    color: #494949;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "main main"
+                         "footer footer";
+    justify-content: center;
+}
+
+header{
+    grid-area: header;
+    justify-self: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+nav{
+    grid-area: nav;
+    justify-self: center;
+    background-color: rgb(255, 248, 234);
+    margin: 50px auto;
+    width: 600px;
+
+    /* Menu Fijo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.navegacion ul{
+    display: flex;
+    list-style: none;    
+}
+
+
+.menu > li > a{    
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #494949;
+}
+
+/*subMenu
+
+.subMenu{
+   position: absolute;
+   background-color: #fff8ea;
+   width: 100%;
+   display: none;
+   flex-direction: column;
+}
+
+.subMenu li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #494949;
+    font-size: 12px;
+}*/
+
+/*hacer que el menu aparezca cuando el cursor se posiciona sobre la opcion
+.menu li:hover .subMenu{
+    display: block;
+}*/
+
+main{
+    grid-area: main;
+}
+
+/* correcciones de imagen y video */
+
+h2{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.video{
+    display: flex;
+
+}
+
+.fondoCarro{
+    display: flex;
+    background-color: azure;
+    width: 100px;
+    margin-left: 130px;
+       
+}
+
+.carro{
+       
+    width: 100%;
+}
+
+footer{
+    grid-area: footer;
+    padding: 10px;
+}
+
+footer div{
+    display: flex;      
+    width: 100px;    
+}
+
+.facebook{
+    width: 100%;
+}
+
+.instagram{
+    width: 100%;
+}
+
+.whatsapp{
+    width: 100%;
+}
+
+/* correccion nosotros*/
+
+p{
+    margin: 0 20px 30px 20px;
+}
+
+div .fachada {
+    width: 500px;
+    height: 450px;
+    margin-left: 450px;
+}
+
+/* correction productos*/
+.insumos{    
+    display: flex;    
+    flex-direction: column;    
+    align-items: center;
+    padding: 5px;
+    justify-content: space-between;
+
+}
+
+.product{    
+    width: 450px;
+    height: 400px;
+}
+
+/* correccion tiendas*/
+.mapa{
+    display: flex;
+    justify-content: center;
+}
+
+/*correccion contacto*/
+form{
+    background-color: azure;
+    display: flex;
+    justify-content: start;
+}
+
+/* media queries*/
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+    header{
+        font-size: 10px;
+    }
+
+    .navegacion ul{
+        flex-direction: column;
+    }
+
+    .video{
+        display: none;
+    }
+
+    .product{    
+        width: 250px;
+        height: 200px;
+    }
+
+    .mapa{
+        height: 200px;
+        width: 150px;
+    }
+   
+
+    
+}

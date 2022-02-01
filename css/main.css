@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgba(95, 252, 199, 0.836);
+    background: linear-gradient(90deg, rgba(87,217,222,1) 0%, rgba(45,42,250,1) 50%, rgba(245,131,49,1) 100%);
     color: #494949;
     margin-top: 10px;
     font-family: 'Roboto', sans-serif;
@@ -94,22 +94,31 @@ h2{
     margin-top: 30px;
 }
 
-.video{
-    display: flex;
-
-}
 
 .fondoCarro{
     display: flex;
-    background-color: azure;
-    width: 100px;
-    margin-left: 130px;
-       
+    justify-content: center;
+    align-content: center;        
+           
 }
 
+
 .carro{
-       
-    width: 100%;
+    animation-name: carro;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;  
+}
+
+@keyframes carro{
+    form{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 footer{

@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-
+/* color con gradiente */
 body{
     background: linear-gradient(90deg, rgba(87,217,222,1) 0%, rgba(45,42,250,1) 50%, rgba(245,131,49,1) 100%);
     color: #494949;
@@ -58,6 +58,12 @@ nav{
     padding: 15px 20px;
     font-size: 20px;
     color: #494949;
+}
+
+/* transformacion de menu */
+
+.menu li:hover {
+    transform: scale(1.3, 1.3);
 }
 
 /*subMenu
@@ -193,11 +199,7 @@ form{
 
     .navegacion ul{
         flex-direction: column;
-    }
-
-    .video{
-        display: none;
-    }
+    }    
 
     .product{    
         width: 250px;
